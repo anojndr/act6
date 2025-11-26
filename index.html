@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Mice Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gaming Mice Gallery</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4 mb-4">
+        <h1 class="text-center">10 Best Gaming Mice</h1>
+    </div>
+
+    <div class="container" id="gallery">
+        <div class="row" id="gallery-container">
+        </div>
+    </div>
+
+    <div class="modal fade" id="mouseModal" tabindex="-1" aria-labelledby="mouseModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mouseModalLabel">Mouse Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modal-image" class="img-fluid mb-3" alt="Mouse Image">
+                    <p id="modal-description"></p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Weight:</strong> <span id="modal-weight"></span></li>
+                        <li class="list-group-item"><strong>Max DPI:</strong> <span id="modal-dpi"></span></li>
+                        <li class="list-group-item"><strong>Battery Life:</strong> <span id="modal-battery"></span></li>
+                        <li class="list-group-item"><strong>Connection:</strong> <span id="modal-connection"></span></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="modal-link" class="btn btn-primary" target="_blank">Read Full Review</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
